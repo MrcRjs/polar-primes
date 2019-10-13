@@ -48,3 +48,7 @@ function sieve(limit) {
 
 	return primes;
 } 
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
