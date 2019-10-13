@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(1000, 1000);
+	createCanvas(windowWidth, windowHeight);
 	background(0);
 	translate(width / 2, height / 2);
 
@@ -48,4 +48,3 @@ function sieve(limit) {
 
 	return primes;
 } 
-
