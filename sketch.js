@@ -1,7 +1,7 @@
 let cnv;
 
 const VEL = 100;
-const Primes = sieve(1000000);
+const Primes = sieve(300000);
 const PL = Primes.length;
 const primePoints = new Array(PL);
 
@@ -15,6 +15,7 @@ function setup() {
 		const p = getCartesian(Primes[i], Primes[i]);
 		primePoints[i] = { x: p.x / 300, y: p.y/300};
 	}
+	delete (Primes);
 }
 
 let prime_i = 0;
